@@ -6,12 +6,6 @@
   flex-direction: $flex-direction;
 }
 
-@mixin mobile {
-  @media screen and (min-width: variables.$mobile-breakpoint) {
-    @content;
-  }
-}
-
 @mixin tablet {
   @media screen and (min-width: variables.$tablet-breakpoint) {
     @content;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import MemeDisplay from "./components/MemeDisplay/MemeDisplay";
@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       <MemeDisplay />
       <Footer />
     </div>
