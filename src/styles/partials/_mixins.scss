@@ -1,12 +1,37 @@
+<<<<<<< HEAD
+@use "./variables";
+@mixin flex($justify-content, $align-items, $flex-direction: row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
+@mixin mobile {
+  @media screen and (min-width: variables.$mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: variables.$tablet-breakpoint) {
+=======
 @use "./variables" as *;
 
 @mixin tablet {
   @media screen and (min-width: $tablet-breakpoint) {
+>>>>>>> develop
     @content;
   }
 }
 
 @mixin desktop {
+<<<<<<< HEAD
+  @media screen and (min-width: variables.$desktop-breakpoint) {
+    @content;
+  }
+}
+=======
   @media screen and (min-width: $desktop-breakpoint) {
     @content;
   }
@@ -22,3 +47,4 @@
   align-items: $align-items;
   flex-direction: $flex-direction;
 }
+>>>>>>> develop
