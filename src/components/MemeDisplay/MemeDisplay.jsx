@@ -40,22 +40,24 @@ class MemeDisplay extends Component {
       <>
         <article className="meme-generator">
           <form className="form" onSubmit={this.handleSubmit}>
-            <input
-              className="form__input-one"
-              type="text"
-              name="topText"
-              placeholder="Top Text"
-              value={this.state.topText}
-              onChange={this.handleChange}
-            />
-            <input
-              className="form__input-two"
-              type="text"
-              name="bottomText"
-              placeholder="Bottom Text"
-              value={this.state.bottomText}
-              onChange={this.handleChange}
-            />
+            <section className="form__inputs-flexbox">
+              <input
+                className="form__input-one"
+                type="text"
+                name="topText"
+                placeholder="Top Text"
+                value={this.state.topText}
+                onChange={this.handleChange}
+              />
+              <input
+                className="form__input-two"
+                type="text"
+                name="bottomText"
+                placeholder="Bottom Text"
+                value={this.state.bottomText}
+                onChange={this.handleChange}
+              />
+            </section>
             <div className="form__button-flexbox">
               <button className="form__button">Make Meme Magic!</button>
             </div>
@@ -68,8 +70,12 @@ class MemeDisplay extends Component {
                 src={this.state.randomImage}
                 alt="random meme image"
               />
-              <h2 className="meme__top-text">hi: {this.state.topText}</h2>
-              <h2 className="meme__bottom-text">hi:{this.state.bottomText}</h2>
+              <h2 className="meme__top-text">
+                placeholder text to delete {this.state.topText}
+              </h2>
+              <h2 className="meme__bottom-text">
+                placeholder text to delete{this.state.bottomText}
+              </h2>
             </div>
           </div>
         </article>
