@@ -1,16 +1,19 @@
-@use "variables" as *;
-
-/* $mobile-breakpoint: 320px; $tablet-breakpoint: 768px; $desktop-breakpoint: 1280px;
-*/
+@use "./variables";
+@mixin flex($justify-content, $align-items, $flex-direction: row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
 
 @mixin tablet {
-  @media screen and (min-width: $tablet-breakpoint) {
+  @media screen and (min-width: variables.$tablet-breakpoint) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: $desktop-breakpoint) {
+  @media screen and (min-width: variables.$desktop-breakpoint) {
     @content;
   }
 }

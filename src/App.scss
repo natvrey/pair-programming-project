@@ -1,20 +1,13 @@
-@use "./styles/partials/colors" as *;
 @use "./styles/partials/variables" as *;
 @use "./styles/partials/mixins" as *;
-@use "./styles/partials/typography" as *;
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 body {
-  background-color: $white;
   margin: 0;
-  font-family: "Avenir-Next";
-}
-
-.App {
-  text-align: center;
+  padding: 16px;
+  font-family: "Comic Sans MS";
 }
