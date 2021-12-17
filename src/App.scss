@@ -1,3 +1,13 @@
-.App {
-  text-align: center;
+@use "./styles/partials/variables" as *;
+@use "./styles/partials/mixins" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: "Comic Sans MS";
 }
