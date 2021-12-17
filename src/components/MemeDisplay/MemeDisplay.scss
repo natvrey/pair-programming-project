@@ -1,0 +1,96 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.meme-generator {
+  background-color: salmon;
+}
+.form {
+  @include flexbox(_, _, column);
+
+  &__button-flexbox {
+    @include flexbox(center, center, _);
+    min-width: 70vw;
+    max-width: 95vw;
+    min-height: 35px;
+    max-height: 35px;
+  }
+  &__button {
+    background-color: lightseagreen;
+    min-width: 70vw;
+    max-width: 95vw;
+    min-height: 35px;
+    max-height: 35px;
+    border-radius: 4px;
+    border: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__input-one {
+    background-color: yellow;
+    min-width: 30px;
+    max-width: 95vw;
+    min-height: 35px;
+    max-height: 35px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+  }
+
+  &__input-two {
+    background-color: yellow;
+    min-width: 30px;
+    max-width: 95vw;
+    min-height: 35px;
+    max-height: 35px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+  }
+}
+.meme {
+  padding: 20px;
+  position: relative;
+  @include flexbox(center, _, column);
+
+  &__top-text {
+    position: absolute;
+    top: -1rem;
+    left: 7vw;
+    color: white;
+    word-wrap: break-word;
+    font-size: 22px;
+  }
+
+  &__bottom-text {
+    position: absolute;
+    top: 14rem;
+    left: 7vw;
+    color: white;
+    word-wrap: break-word;
+    font-size: 22px;
+  }
+
+  &__image-container {
+    @include flexbox(center, center, _);
+    position: relative;
+    background-color: black;
+    object-position: center;
+    object-fit: contain;
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  &__image {
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
