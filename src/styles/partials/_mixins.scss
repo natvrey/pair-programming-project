@@ -1,5 +1,9 @@
 @use "./variables";
-@mixin flex($justify-content, $align-items, $flex-direction: row) {
+@mixin flex(
+  $justify-content: flex-start,
+  $align-items: stretch,
+  $flex-direction: row
+) {
   display: flex;
   justify-content: $justify-content;
   align-items: $align-items;

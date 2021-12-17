@@ -1,9 +1,7 @@
 @use "./styles/partials/variables" as *;
 @use "./styles/partials/mixins" as *;
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 body {

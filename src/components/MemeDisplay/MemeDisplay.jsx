@@ -8,7 +8,7 @@ class MemeDisplay extends Component {
       topParagraph: "",
       bottomParagraph: "",
       randomImage: "http://i.imgflip.com/1bij.jpg",
-      allMemeImgs: []
+      allMemeImgs: [],
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -64,7 +64,7 @@ class MemeDisplay extends Component {
           <form className="form" onSubmit={this.handleSubmit}>
             <section className="form__inputs-flexbox">
               <input
-                className="form__input-one"
+                className="form__input-top"
                 type="text"
                 name="topText"
                 placeholder="Top Text"
@@ -72,7 +72,7 @@ class MemeDisplay extends Component {
                 onChange={this.handleChange}
               />
               <input
-                className="form__input-two"
+                className="form__input-bottom"
                 type="text"
                 name="bottomText"
                 placeholder="Bottom Text"
@@ -92,12 +92,8 @@ class MemeDisplay extends Component {
                 src={this.state.randomImage}
                 alt="random meme image"
               />
-              <h2 className="meme__top-text">
-                placeholder text to delete {this.state.topText}
-              </h2>
-              <h2 className="meme__bottom-text">
-                placeholder text to delete{this.state.bottomText}
-              </h2>
+              <h2 className="meme__top-text">{this.state.topText}</h2>
+              <h2 className="meme__bottom-text">{this.state.bottomText}</h2>
             </div>
           </div>
         </article>
