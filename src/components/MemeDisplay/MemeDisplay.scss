@@ -3,7 +3,7 @@
 @use "../../styles/partials/colors" as *;
 
 .meme-generator {
-  background-color: #3a86ff;
+  background-color: #a3c9a8;
 }
 .form {
   @include flex(_, _, column);
@@ -23,14 +23,16 @@
   &__button {
     min-width: 70vw;
     max-width: 95vw;
-    min-height: 35px;
-    max-height: 35px;
-
-    background-color: $meme-blue;
+    min-height: 43px;
+    max-height: 43px;
+    font-family: "AvenirNextLTPro";
+    background-color: #fb8500;
     color: $white;
+    font-size: 24px;
     font-weight: 700;
     border-radius: 0.25rem;
     border: none;
+    padding-top: 7px;
   }
 
   &__input-top {
@@ -42,7 +44,7 @@
     margin-bottom: 8px;
     margin-right: 16px;
     margin-left: 16px;
-    font-family: "Avenir-Next";
+    font-family: "AvenirNextLTPro";
     color: $meme-black;
     background: $alabaster;
     padding: 1rem;
@@ -58,12 +60,12 @@
     margin-bottom: 20px;
     margin-right: 16px;
     margin-left: 16px;
-    font-family: "Avenir-Next";
     color: $meme-black;
     background: $alabaster;
     padding: 1rem;
     border-radius: 0.25rem;
     border: 1px solid $mercury;
+    font-family: "AvenirNextLTPro";
   }
 }
 
@@ -75,26 +77,37 @@
   &__top-text {
     position: absolute;
     top: -1rem;
-    left: 1vw;
+    left: 5vw;
     color: white;
     word-wrap: break-word;
     font-size: 22px;
+    min-width: 220px;
+    max-width: 220px;
+    font-family: "AvenirNextLTPro";
+    letter-spacing: 1px;
+    min-height: 50px;
+    max-height: 50px;
   }
 
   &__bottom-text {
     position: absolute;
     top: 14rem;
-    left: 1vw;
+    left: 5vw;
     color: white;
-
     word-wrap: break-word;
     font-size: 22px;
+    min-width: 220px;
+    max-width: 220px;
+    font-family: "AvenirNextLTPro";
+    letter-spacing: 1px;
+    min-height: 50px;
+    max-height: 50px;
   }
 
   &__image-container {
     @include flex(center, center, _);
     position: relative;
-    background-color: black;
+
     object-position: center;
     object-fit: contain;
     min-width: 250px;

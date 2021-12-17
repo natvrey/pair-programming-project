@@ -13,9 +13,7 @@ const Header = () => {
           />
         </div>
         <div className="header__title-container">
-          <h1 className="header__title">
-            MEME <br></br> GENERATOR
-          </h1>
+          <h1 className="header__title">MEME STATION</h1>
         </div>
       </div>
     </header>

@@ -1,2 +1,9 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
+
+.footer {
+  background-color: #50808e;
+  color: white;
+  font-family: "AvenirNextLTPro";
+  padding: 10px;
+}
