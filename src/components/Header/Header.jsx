@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import "./Header.scss";
 import { Link } from "react-router-dom";
 
@@ -19,11 +18,6 @@ const Header = () => {
       </div>
     </header>
   );
-=======
-
-const Header = () => {
-  return <div>Header!!</div>;
->>>>>>> develop
 };
 
 export default Header;
